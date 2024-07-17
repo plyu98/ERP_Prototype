@@ -1,0 +1,87 @@
+@import '@blueprintjs/core/lib/scss/variables';
+
+h2 {
+    color: #2D72D2;
+    margin-right: 10px;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 5px;
+}
+
+dt {
+    font-weight: bold;
+    grid-column-start: 1;
+}
+
+dd {
+    grid-column-start: 2;
+}
+
+.quot-footer {
+    align-items: baseline;
+}
+
+textarea.bp5-input {
+    height: 100px;
+}
+
+body {
+    font-family: 'Open Sans', 'Roboto';
+}
+
+.edit-notes {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.right-section {
+    display: flex;
+    align-items: flex-end;
+}
+
+.left-section {
+    display: flex;
+    align-items: baseline;
+}
+
+.save-notes-button {
+    border-radius: 20px;
+}
+
+.part-notes {
+    background-color: #E5E8EB;
+    font-family: "Open Sans";
+}
+
+.part-info-header {
+    display: flex;
+    align-items: center;
+}
+
+.part-button {
+    border-radius: 20px;
+}
+
+// textareas in part notes card
+.bp5-input.bp5-text-area.bp5-fill.part-notes {
+    height: 15vh;
+}
+
+.partinfo-page {
+    margin: 5px;
+    height: 100vh;
+}
+
+.part-notes-card {
+    height: 88vh;
+}
+
+.part-info-card {
+    padding-top: 0px;
+}
+
+

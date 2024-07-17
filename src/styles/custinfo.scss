@@ -1,0 +1,100 @@
+@import '@blueprintjs/core/lib/scss/variables';
+
+.edit {
+  display: flex;
+  align-items: baseline;
+}
+
+h1 {
+  margin-right: 10px;
+  color: #215DB0;
+}
+
+.form-input {
+  width: 600px;
+}
+
+.form-label .bp5-label {
+  width: 100px;
+}
+
+
+.page {
+  margin: 5px;
+}
+
+.test {
+  flex: 1;
+}
+
+
+body {
+  font-family: 'Open Sans', 'Roboto';
+}
+
+/* .memo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 5px;
+}
+
+dt {
+  font-weight: bold;
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.edit-button, .save-button {
+  border-radius: 20px;
+}
+
+.memo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.right-section {
+  display: flex;
+  align-items: flex-end;
+}
+
+.left-section {
+  display: flex;
+  align-items: baseline;
+}
+
+.cust-invoice-card, .cust-parts-card {
+  height: 800px;
+}
+
+.paid-checkbox {
+  text-align: center;
+}
+
+.custom-notes {
+  background-color: $light-gray5;
+  font-family: "Open Sans";
+}
+
+.bp5-input.bp5-text-area.bp5-fill.bp5-large.custom-notes {
+  height: 650px;
+}
+
+
+
+

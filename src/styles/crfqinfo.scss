@@ -1,0 +1,115 @@
+@import '@blueprintjs/core/lib/scss/variables';
+
+h2 {
+  color: #2D72D2;
+  margin-right: 10px;
+}
+
+h3 {
+  color: #2F343C;
+  margin-right: 10px;
+}
+
+.crfq-info-dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 5px;
+}
+
+.crfq-info-div {
+  display: grid;
+}
+
+.crfq-info-title {
+  font-weight: bold;
+  /* grid-column-start: 1; */
+}
+
+.crfq-info-descr {
+  font-weight: normal;
+  /* grid-column-start: 2; */
+}
+
+.items-card {
+  // height: 61vh;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.items-table {
+  // height: 84%;
+  height: 480px;
+}
+
+/* this changes font-size throughout the entire app*/
+.bp5-table-cell {
+  font-size: 14px;
+}
+
+.crfq-page {
+  margin: 5px;
+}
+
+.part-detail-card {
+  height: 280px;
+  overflow-x: auto;
+}
+
+.crfq-detail-card {
+  // height: 13vh;
+  /* height: 135px; */
+  overflow-y: auto;
+  padding-bottom: 1%;
+}
+
+.items-card, .part-detail-card, .crfq-detail-card {
+  padding-top: 0%;
+}
+
+.crfq-detail-header, .items-header, .part-details-header, .textareas-notes-div {
+  display: flex;
+  align-items: center;
+}
+
+.bp5-input.bp5-text-area.textareas-notes {
+  height: 13vh;
+  width: 16vw;
+  background-color: $light-gray5;
+  font-family: "Open Sans";
+}
+
+.items-tags, .part-tags {
+  padding-bottom: 10px;
+}
+
+.items-header, .crfq-detail-header, .part-details-header {
+  height: 50px;
+}
+
+
+.edit-button, .open-button, .export-button, .save-button, .send-button {
+  border-radius: 20px;
+}
+
+.form-input {
+  width: 550px;
+}
+
+.form-label .bp5-label {
+  width: 130px;
+}
+
+.category-radio {
+  display: flex;
+  align-items: center;
+}
+
+.category-radio > .bp5-label {
+  width: 140px; /* try to match with the width of other labels; 10px bigger*/
+}
+
+.crfq-checkbox {
+  text-align: center;
+  /* width: 20%;
+  padding: 3px; */
+}

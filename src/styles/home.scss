@@ -1,0 +1,278 @@
+@import '@blueprintjs/core/lib/scss/variables';
+@import "@blueprintjs/select/lib/css/blueprint-select.css";
+
+.searchbar {
+  width: 900px;
+  border-radius: 20px;
+  justify-content: flex-start;
+}
+
+.bp5-input-group.bp5-input > .search-input {
+  width: 500px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-cards-list {
+  height: 600px;
+}
+
+.home-navbar {
+  height: 50px; /* this has to be same height as the padding top of home-page */
+  display: flex;
+  padding-left: 300px; /* has to match the width of the tab menus*/
+  /* width: 1099px; */
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  overflow-y: auto;
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+} 
+
+body::-webkit-scrollbar-thumb {
+  background: #868686;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-button:start {
+  /* height: 50px; */
+  background: transparent;
+}
+
+.home-tabs > .bp5-tab-list .bp5-tab-indicator-wrapper {
+  background-color: #8ABBFF;
+  margin-right: 0px;
+}
+
+.home-tabs > .bp5-tab-list .bp5-tab-indicator-wrapper:hover {
+  color: #165A36;
+}
+
+// .home-tabs > .bp5-vertical {
+//   height: 100%;
+// }
+
+.home-card {
+  padding: 0px; 
+  // height: 99%; 
+  /* min-height: 100vh; */
+}
+
+.result-table {
+  height: 600px;
+}
+
+/* for date input in the crfq search option*/
+.bp5-form-group.bp5-fill.bp5-inline.receive-date > .bp5-label {
+  margin-right: 15px;
+}
+
+.bp5-form-group.bp5-fill.bp5-inline.due-date > .bp5-label {
+  margin-right: 37.86px;
+}
+
+.search-text {
+  color: #5f6b7c;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.search-dialog {
+  width: 1000px;
+  height: 800px;
+}
+
+.part-form-label .bp5-label, .customer-form-label .bp5-label, .vendor-form-label .bp5-label, .crfq-form-label .bp5-label {
+  width: 130px;
+}
+
+.part-form-input, .part-form-textarea {
+  width: 300px;
+}
+
+.customer-form-input, .vendor-form-input {
+  width: 400px;
+}
+
+.info-panel {
+  width: 800px;
+}
+
+.multistep-add-dialog {
+  width: 1000px;
+  overflow-y: auto;
+}
+
+.create-dialog {
+  height: 700px;
+  width: 750px;
+  overflow-y: auto;
+}
+
+.crfq-customer-suggest {
+  width: 550px;
+}
+
+
+// this is the main card (in the background) of home page
+.main-card {
+  background-color: $light-gray4;
+  display: flex;
+  overflow-y: auto;
+  height: 100vh;
+  // align-items: flex-end;
+  // width: 100%;
+}
+
+// card containing tab pane and panels
+.home-page {
+  margin-left: 10px; 
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  // min-height: 95vh; 
+  /* due to the fixed nabvar at the top */
+  /* max-height: calc(100vh - 50px); */
+  /* padding-top: 50px;  */
+  scroll-behavior: smooth;
+  background-color: $light-gray4;
+  flex: 1;
+  // overflow-y: auto;
+  // height: 95vh;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-menu-top {
+  display: flex;
+  align-items: flex-start;
+  background-color: $light-gray4;
+  margin-top: 5vh;
+}
+
+// bottom side menuitems
+.side-menu-bottom {
+  display: flex;
+  align-items: flex-end;
+  background-color: $light-gray4;
+  margin-bottom: 5vh;
+  justify-content: center;
+}
+
+// side menu buttons 
+.side-menu-button {
+  width: 100%;
+}
+
+// tab pane 
+.home-tabs > .bp5-tab-list {
+  background-color: $light-gray2;
+  width: 250px;
+  height: 93vh; /* ensure tab-list convers the entire height of window*/
+  overflow-x: auto;
+  
+}
+
+// corresponding tab panel to the tab pane selection
+.bp5-tabs.bp5-vertical > .tab-panel {
+  padding-left: 0px;
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 93vh;
+  width: 75vh;
+  // width: 70vh;
+  // height: 100vh;
+}
+
+// corresponding tab panel to the tab pane selection
+.tab-panel {
+  font-weight: bold;
+  background-color: $white;
+  overflow-x: auto;
+  overflow-y: auto;
+  // height: 100vh;
+}
+
+.receiving-card {
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  // width: 100vh;
+}
+
+.bp5-popover.bp5-minimal.bp5-popover-placement-right.add-menu-popover {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.bp5-popover.bp5-minimal.bp5-popover-placement-right.add-menu-popover > .bp5-popover-content {
+  border-radius: 10px;
+  // margin-left: 10px;
+}
+
+.add-menu {
+  border-radius: 10px;
+  // margin-left: 10px;
+}
+
+.add-button {
+  color: $blue3;
+  margin-right: 15px; // for distance between add button and add-menu popover
+  $transition-duration: 0.3s;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: rotate(90deg) scale(1.2);
+  };
+  &.clicked {
+    transform: rotate(90deg) scale(1.2); 
+  }
+}
+
+.add-button.clicked {
+  transform: rotate(90deg);
+}
+
+.chevron-icon {
+  color: $gray3;
+  margin-left: 10px;
+}
+
+.unavailable-icon, .available-icon {
+  margin-right: 10px;
+}
+
+.available-icon {
+  color: $gray3;
+}
+
+.unavailable-icon {
+  color: $red2;
+}
+
+
+// .card-panel {
+//   font-weight: normal;
+//   height: 100vh;
+//   // width: 100%;
+//   background-color: $white;
+// }
+
+// .customer-suggest {
+//   overflow-y: auto;
+// }
+
+
+/* .tab-divider {
+  background-color: black;
+} */

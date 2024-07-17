@@ -1,0 +1,91 @@
+{
+  "name": "new-tm-prototype",
+  "version": "0.1.0",
+  "author": "Alex Yu",
+  "private": true,
+  "homepage": "./",
+  "main": "public/electron.js",
+  "build": {
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "server/**"
+    ],
+    "win": {
+      "icon": "build/new_tm.ico"
+    }
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^5.9.1",
+    "@blueprintjs/datetime2": "^2.3.1",
+    "@blueprintjs/docs-theme": "^5.2.0",
+    "@blueprintjs/icons": "^5.3.0",
+    "@blueprintjs/select": "^5.0.20",
+    "@blueprintjs/table": "^5.1.1",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.12",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.30.0",
+    "electron-is-dev": "^2.0.0",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "immer": "^10.0.3",
+    "nodemailer": "^6.9.12",
+    "path": "^0.12.7",
+    "pg": "^8.11.3",
+    "pg-format": "^1.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0",
+    "react-scripts": "5.0.1",
+    "use-immer": "^0.9.0",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "build": "npm run react-build && npm run electron-build",
+    "electron": "electron .",
+    "start": "concurrently -k \"node ./src/server.js \" \"cross-env BROSWER=none npm run react-start\" \"wait-on tcp:127.0.0.1:3000 & npm run electron\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      "last 1 electron version",
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 electron version",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^27.1.0",
+    "electron-builder": "^24.6.4",
+    "sass": "^1.71.1",
+    "wait-on": "^7.2.0"
+  },
+  "proxy": "http://127.0.0.1:3001"
+}

@@ -1,0 +1,22 @@
+@import '@blueprintjs/core/lib/scss/variables';
+
+.bp5-label {
+    font-weight: bold;
+}
+
+.eccn-header {
+    display: flex;
+    align-items: center;
+}
+
+.edit-button {
+    border-radius: 20px;
+}
+
+.eccn-info-card {
+    height: 80px;
+}
+
+.eccn-table {
+    height: 500px;
+}

@@ -1,0 +1,21 @@
+@import '@blueprintjs/core/lib/scss/variables';
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quot-hist-table {
+    height: 800px;
+}
+
+.category-card {
+    padding-top: 0.5%;
+}
+
+.edit-dialog {
+    width: 800px;
+    height: 700px;
+}
